@@ -1,0 +1,28 @@
+/*footer*/
+.footer{
+    background: rgb(70, 67, 67);
+    color:#d3d3d3;
+    height: 400px;
+    position: relative;
+}
+.footer .footer-content{
+border: 1px solid red;
+height: 350px;
+}
+
+.footer .footer-bottom{
+    background: #343434; 
+    color: #686868;
+    height: 50px;
+    width:100% ;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+.navbar{
+    background-color: rgb(147, 175, 226);
+    padding:0 5px;
+    color: cornsilk;
+}
