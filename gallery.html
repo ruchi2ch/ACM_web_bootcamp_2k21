@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>website</title>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -107,7 +106,7 @@ body {
  */
 
 img.preview, img.modal-preview {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 img.active,
@@ -165,6 +164,17 @@ img.hover-shadow {
 .previous:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+.footer-bottom{
+    background: #343434; 
+    color: #686868;
+    height: 50px;
+    width:100% ;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
 }
 </style>
 <script>
@@ -229,30 +239,30 @@ function showSlide(n) {
 </header>
   <div class="row">
     <div class="col">
-       <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Toy car on the road." />
+       <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="1" />
     </div>
     <div class="col">
-       <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Toy car exploring offroad." />
+       <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="2" />
     </div>
     <div class="col">
-       <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Toy car in the city." />
+       <img src="https://images.pexels.com/photos/67102/pexels-photo-67102.jpeg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="3" />
     </div>
     <div class="col">
-      <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Toy car in the city." />
+      <img src="https://images.pexels.com/photos/4878030/pexels-photo-4878030.jpeg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="4" />
    </div>
   </div>
   <div class="row">
     <div class="col">
-      <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Toy car in the city." />
+      <img src="https://images.pexels.com/photos/6044187/pexels-photo-6044187.jpeg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="5" />
    </div>
    <div class="col">
-    <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Toy car in the city." />
+    <img src="https://static.pexels.com/photos/386566/pexels-photo-386009.jpeg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="6" />
  </div>
  <div class="col">
-  <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Toy car in the city." />
+  <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="7" />
 </div>
 <div class="col">
-  <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Toy car in the city." />
+  <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="8" />
 </div>
   </div>
 
@@ -315,5 +325,6 @@ function showSlide(n) {
       </div>
     </div>
   </div>
+  <div class="footer-bottom">&copy;made for learning purpose</div>
 </body>
 </html>
