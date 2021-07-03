@@ -1,8 +1,13 @@
 /*footer*/
+header{
+    background-image: url('images\banner.jpg'); 
+}
+.carousel-inner img {
+    height: 400px;
+}
 .footer{
     background: rgb(70, 67, 67);
     color:#d3d3d3;
-    height: 400px;
     position: relative;
 }
 
@@ -25,10 +30,8 @@
 footer{
     background-color:#3e6666 ;
 }
-footer .footer-cols
+ footer .footer-cols
 {display:grid;
-grid-gap:10px;
-grid-template-columns:repeat(4,1fr);
 padding:2.5rem 1rem;
 text-align:left;
 font-size:14px;
@@ -46,3 +49,6 @@ footer .footer-cols ul li:first-child{
    color: white;}
    footer .footer-bottom{
     padding:1rem}
+
+    /*banner*/
+   
