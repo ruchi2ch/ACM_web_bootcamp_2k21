@@ -19,84 +19,22 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
-  $("nav li").hover(function () {
-    $(this).find('a').stop().animate({ color: '#01216D', backgroundColor: '#fff'}, 800);
+  $("nav ul li").hover(function () {
+    $(this).find('a').stop().animate({ color: 'pink', backgroundColor: 'yellow'}, 800);
 }, function () {
-    $(this).find('a').stop().animate({ color: '#fff', backgroundColor: '#01216D'}, 800);
+    $(this).find('a').stop().animate({ color: 'yellow', backgroundColor: '#01216D'}, 800);
  });
 });
 </script>
 </head>
 
 <body>
-  <!--<header>
-    
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <img class="navbar-brand" src="images\RClogo.png" width="350px" height="70px"></img>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="EventPage.html">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <li><a class="nav-link" href="#">Student Portal</a></li>
-          <li><a class="nav-link" href="Contact.html">Contact us</a></li>
-        </ul>
-
-      </div>
-    </nav>-->
-   <!-- <video src="images\Pexels Videos 2002527.mp4" class="vid-bg" autoplay loop></video>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <img class="navbar-brand" src="images\RClogo.png" width="350px" height="70px"></img>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="EventPage.html">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <li><a class="nav-link" href="StudentPortal.html">Student Portal</a></li>
-          <li><a class="nav-link" href="Contact.html">Contact us</a></li>
-        </ul>
-
-      </div>
-    </nav>
-    <div class="banner-text">
-      <h2>Welcome to RC University</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur harum voluptas quod debitis facere magni deleniti, ipsam quaerat quos voluptatum obcaecati dolorum repellendus nulla nemo nesciunt ipsa eligendi eveniet. Neque!</p>
-      <button class="tn btn-lg btn-outline-success">visit us</button> 
-    </div>
-  </header>
---> 
 
 <section id=main>
-  <div class="container">
+  <div class="container-fluid">
     <video autoplay muted loop class="video">
       <source src="images/Pexels Videos 2002527.mp4"/>
     </video>
@@ -122,7 +60,7 @@
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
-        <li><a class="nav-link" href="#">Student Portal</a></li>
+        <li><a class="nav-link" href="StudentPortal.html">Student Portal</a></li>
         <li><a class="nav-link" href="Contact.html">Contact us</a></li>
       </ul>
 
@@ -137,46 +75,76 @@
 </section>
 
 
-
-
-<div class="col-md-4 p-5 m-2 boxStyle  border border-primary">
-  <h2>Feedback Form</h2>
-  <form >
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-      </div>
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-</div>
-</div>
-
-
-
-  <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+<div class="container-carousel">
+  <div class="row">
+    <div class="col-md-12">
+ <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/1.jpeg" class="d-block w-100" alt="...">
+        <div class="row">
+                <div class="col-md-4">
+                  <div class="single-box">
+                    <div class="img-area"><img src="images/man.jpg"></div>
+                    <div class="img-text">
+                      <h2>Person One</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquid, adipisci commodi totam optio asperiores ipsam voluptatem!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="single-box">
+                    <div class="img-area"><img src="images/man.jpg"></div>
+                    <div class="img-text">
+                      <h2>Person Two</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquid, adipisci commodi totam optio asperiores ipsam voluptatem!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="single-box">
+                    <div class="img-area"><img src="images/man.jpg"></div>
+                    <div class="img-text">
+                      <h2>Person Three</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquid, adipisci commodi totam optio asperiores ipsam voluptatem!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
       </div>
       <div class="carousel-item">
-        <img src="images/2.jpeg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/3.jpeg" class="d-block w-100" alt="...">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="single-box">
+              <div class="img-area"><img src="images/man.jpg"></div>
+              <div class="img-text">
+                <h2>Person Four</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquid, adipisci commodi totam optio asperiores ipsam voluptatem!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="single-box">
+              <div class="img-area"><img src="images/man.jpg"></div>
+              <div class="img-text">
+                <h2>Person Five</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquid, adipisci commodi totam optio asperiores ipsam voluptatem!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="single-box">
+              <div class="img-area"><img src="images/man.jpg"></div>
+              <div class="img-text">
+                <h2>Person Six</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquid, adipisci commodi totam optio asperiores ipsam voluptatem!</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
@@ -187,15 +155,20 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+  </div> 
   </div>
-  <footer>
+  </div>
+  </div>
+
+
+<!--footer-->
+<footer >
     <div class="footer">
       <div class="footer-content">
         <div class="container">
-
           <div class="footer-cols">
             <div class="row">
-              <div class="col-sm-5">
+              <div class="col-md-5">
                 <ul>
                   <li><img src="images\RClogo.png" width="350px" height="70px"></img></li>
                   <li>
@@ -206,7 +179,7 @@
                       quo dignissimos. Voluptatum, voluptatem.</a></li>
                 </ul>
               </div>
-              <div class="col-sm-4">
+              <div class="col-md-4">
                 <ul>
                   <li>Contact</li>
                   <li style="font-size:20px"><i class="fa fa-phone"></i> +91 1234567890</li>
@@ -214,7 +187,7 @@
                   <li style="font-size:20px"><i class=" fa fa-envelope" aria-hidden="true"></i> abc@gmail.com</li>
                 </ul>
               </div>
-              <div class="col-sm-3">
+              <div class="col-md-3">
                 <ul>
                   <li></li>
                   <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"
@@ -234,7 +207,6 @@
       <div class="footer-bottom">&copy;made for learning purpose @Ruchika</div>
     </div>
   </footer>
-
 </body>
 
 </html>
