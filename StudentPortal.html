@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>StudentPortal</title>
+    <link rel="stylesheet" href="./css/portal.css">
+    <style>
+        body{
+            background-image:linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.6)), url(images/bg.jpg);
+        }
+        .navbar{
+    background-color: rgb(147, 175, 226);
+    padding:0 5px;
+    margin-bottom: 20px;
+}
+  .footer-bottom{
+    background: #343434; 
+    color: #686868;
+    height: 50px;
+    width:100% ;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+    </style>
+  </head>
+
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <img class="navbar-brand" src="images\RClogo.png" width="350px" height="70px"></img>
+        </nav>
+    </header>
+    <div class="container-fluid row p-3 m-2">
+        <!-- details -->
+        <div class="col-md-7 d-flex flex-wrap boxStyle">
+            <!-- image -->
+            <div class="col-lg-5 p-3">
+                <img src="images/team.gif" style="width: 100%;">
+            </div>
+            <!-- student details -->
+            
+            <div class="col-lg-7 d-flex flex-wrap p-2 flex-column details">
+                <div>
+                    <h3>Name:</h3>
+                    <p>ABC</p>
+                </div>
+                <div>
+                    <h3>Roll No:</h3>
+                    <p>1910990</p>
+                </div>
+                <div>
+                    <h3>Branch:</h3>
+                    <p>CSE</p>
+                </div>
+                <div>
+                    <h3>Semester:</h3>
+                    <p>5th</p>
+                </div>
+            </div>
+        </div>
+        <!-- announcements -->
+        <div class="col-md-4 col-12 boxStyle" >
+            <h2>Announcements</h2>
+            <marquee direction="up" scrollamount="4" style="color: rgb(216, 57, 57);font-size: medium;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam laboriosam sunt mollitia nesciunt veritatis recusandae, </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam laboriosam sunt mollitia nesciunt veritatis recusandae, </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam laboriosam sunt mollitia nesciunt veritatis recusandae, </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam laboriosam sunt mollitia nesciunt veritatis recusandae, </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam laboriosam sunt mollitia nesciunt veritatis recusandae, </p>
+            </marquee>
+        </div>
+    </div>
+
+    <div class="container-fluid row p-3 m-2" >
+        <!-- leave -->
+        <div class="col-md-4 p-5 m-2 boxStyle text-center border border-primary">
+            <form>
+                <h2>Apply Leave</h2>    
+            <label >Date From</label>
+            <input type="date">
+            <br>
+            <label >Date To</label>
+            <input type="date">
+            <br>
+            <label>Reason</label>
+            <input type="text">
+            <br>
+            <input type="submit">
+        </form>
+        <button type="button" class="btn btn-primary m-5" data-toggle="modal" data-target="#exampleModal">
+            Login
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="justify-content: center;">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login:</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form >
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- grades -->
+        <div class="col-md-3 p-5 m-2 boxStyle  border border-primary">
+            <h2>Grades</h2>
+            <table>
+                <tr class="table-primary">
+                    <td>Subject1</td>
+                    <td>90</td>
+                </tr>
+                <tr class="table-secondary">
+                    <td>Subject2</td>
+                    <td>90</td>
+                </tr>
+                <tr class="table-success">
+                    <td>Subject3</td>
+                    <td>90</td>
+                </tr>
+                <tr class="table-danger">
+                    <td>Subject4</td>
+                    <td>90</td>
+                </tr>
+                <tr class="table-info">
+                    <td>Subject5</td>
+                    <td>90</td>
+                </tr>
+                <tr class="table-dark">
+                    <td>Subject6</td>
+                    <td>90</td>
+                </tr>
+                <tr class="table-warning">
+                    <td>Subject7</td>
+                    <td>90</td>
+                </tr>
+            </table>
+        </div>
+        <!-- feedback -->
+        <div class="col-md-4 p-5 m-2 boxStyle  border border-primary">
+            <h2>Feedback Form</h2>
+            <form >
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
+
+
+    <!--JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+    <footer>
+        <div class="footer">
+      <div class="footer-bottom">&copy;made for learning purpose @Ruchika</div>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -5,36 +5,236 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <style>
-     *{
-         margin: 0;
-         padding: 0;
-     }
-     body{
-         background-image:url("Contact.html");
-     }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+    background-color: rgb(147, 175, 226);
+    padding:0 5px;
+    margin-bottom: 20px;
+}
+        .contact{
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image:linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5)), url(images/banner.jpg);
+            background-size: cover;
+            }
+            .contact .contact{
+                max-width: 800px;
+                text-align: center;
+            }
+            .contact .contact h2{
+                font-size: 36px;
+                font-weight: 500;
+                color: #fff;
+            }
+            .contact .contact p{
+                font-weight: 300;
+                color: #fff;
+            }
+            .container{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+            }
+            .container .contactInfo{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+            }
+            .container .contactInfo .box{
+                position: relative;
+                padding: 20px 0;
+                display: flex;
+            }
+            .container .contactInfo .box .icon{
+                min-width: 60px;
+                height:60px;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                font-size: 22px;
+            }
+            .container .contactInfo .box .text{
+                display: flex;
+                margin-left: 20px;
+                font-size: 16px;
+                columns: #fff;
+                flex-direction: column;
+                font-weight: 300;
+            }
+            .container .contactInfo .box .text h3{
+                font-weight: 500;
+                color: #33727a;
+            }
+            .contactForm{
+                width: 40%;
+                padding: 40px;
+                background: #fff;
+            }
+            .contactForm h2{
+               font-size: 30px;
+               color: #333;
+               font-weight: 500;
+            }
+            .contactForm .inputBox{
+                position: relative;
+                width: 100%;
+                margin-top: 10px;
+            }
+            .contactForm .inputBox input,
+            .contactForm .inputBox textarea{
+                width: 100%;
+                padding: 5px 0;
+                font-size: 16px;
+                margin: 10px 0;
+                border: none;
+                border-bottom: 2px solid #333;
+                outline: none;
+                resize: none;
+            }
+            .contactForm .inputBox span{
+                position: absolute;
+                left: 0;
+                padding: 5px 0;
+                font-size: 16px;
+                margin: 10px 0;
+                pointer-events: none;
+                transition: 0.5s;
+                color: #666;
+            }
+            .contactForm .inputBox input:focus ~span,
+            .contactForm .inputBox textarea:focus ~span{
+                color: #e91e63;
+                font-size: 12px;
+                transform: translateY(-20px);
+            }
+            .contactForm .inputBox input[type="submit"]{
+                width: 100px;
+                background: #00bcd4;
+                color:#fff;
+                border: none;
+                cursor: pointer;
+                padding: 10px;
+                font-size: 18px;
+            }
+            @media (max-width:991px){
+                .contact{
+                    padding: 50px;
+                }
+                .container{
+                    flex-direction: column;
+                }
+                .container .contactInfo{
+                    margin-bottom: 40px;
+                }
+                .container .contactInfo,.contactForm{
+                    width: 100%;
+                }
+            }
+            .footer-bottom{
+    background: #343434; 
+    color: #686868;
+    height: 50px;
+    width:100% ;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
     </style>
+    <script>
+        function ValidateEmail(inputText)
+{
+var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+if(inputText.value.match(mailformat))
+{
+alert("Valid email address!");
+mail.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+mail.focus();
+return false;
+}
+}
+    </script>
 </head>
-<body>
-    <div class="regform"><h1>Contact Us</h1></div>
-    <div class="main">
-        <form>
-            <div id="name">
-                <h2 class="name">Name</h2>
-                <input class="firstname" type="text" name="firstname"/><br>
-                <label class="firstlabel">first name</label>
-                <input class="lastname" type="text" name="lastname"/><br>
-                <label class="lastlabel">last name</label>
-            </div> 
-            <h2 class="name">Email</h2>
-            <input class="email" type="email" name="email"/>
-            <h2 class="name">Phone</h2> 
-            <input class="number" type="text" name="phone"/>
-            <label class="phone-number">Phone Number</label>
-            <h2 class="name">Query:</h2>
-            <input type="text"/>
-            <button>Submit Query</button>
-        </form>
-    </div>
+ <body>   
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <img class="navbar-brand" src="images\RClogo.png" width="350px" height="70px"></img>
+          
+          </nav>
+    </header>
+     <section class=contact>
+         <div class="content">
+             <h2>Contact Us:</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ullam consequuntur ratione laboriosam omnis, quaerat eveniet. Adipisci, quasi at magnam nemo a impedit itaque quod sapiente, saepe quaerat veritatis reprehenderit.</p>
+         </div>
+         <div class="container">
+             <div class="contactInfo">
+                 <div class="box">
+                     <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                     <div class="text">
+                         <h3>Address</h3>
+                         <p> Lorem ipsum dolor sit amet,<br>ABC,<br>55600</p>
+                     </div>
+                 </div>
+                 <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p> +9 1234567890</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p> abc@gmail.com</p>
+                    </div>
+                </div>
+             </div>
+             <div class="contactForm">
+                 <form>
+                     <h2>Send message</h2>
+                     <div class="inputBox">
+                         <input type="text" name="" required="required">
+                         <span>Full Name</span>
+                     </div>
+                     <div class="inputBox">
+                        <input type="text" name="mail" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea  name="" required="required"></textarea>
+                        <span>Type your message....</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name=""value="Send" onclick="ValidateEmail(mail)">
+                    </div>
+                 </form>
+             </div>
+         </div>
+     </section>
+     <div class="footer-bottom">&copy;made for learning purpose @Ruchika</div>
 </body>
 </html>

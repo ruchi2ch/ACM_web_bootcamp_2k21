@@ -1,114 +1,240 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>website</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>website</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    $(document).ready(function(){
+  $("nav li").hover(function () {
+    $(this).find('a').stop().animate({ color: '#01216D', backgroundColor: '#fff'}, 800);
+}, function () {
+    $(this).find('a').stop().animate({ color: '#fff', backgroundColor: '#01216D'}, 800);
+ });
+});
+</script>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <img class="navbar-brand" src="images\RClogo.png" width="350px" height="70px"></img>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="EventPage.html">Events</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-              </ul>
-              <ul class="navbar-nav ml-auto">
-              <li><a class="nav-link" href="#">Student Portal</a></li>
-              <li><a class="nav-link" href="Contact.html">Contact us</a></li>
-              </ul>
-              
-            </div>
-          </nav>
-          <div class="row"> 
-            <div class="col-12">
-                  <h2>Welcome to RC Collage</h2>
-                  <div class="row">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime facere nulla, quas perferendis ad dolorum dolore unde suscipit ex beatae voluptate corrupti hic voluptatibus debitis facilis culpa dignissimos doloremque blanditiis!</p>
-                  </div>
-                  <a class="btn px-4 py-2 mt-4">Explore</a>
-                </div>
+  <!--<header>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <img class="navbar-brand" src="images\RClogo.png" width="350px" height="70px"></img>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="EventPage.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li><a class="nav-link" href="#">Student Portal</a></li>
+          <li><a class="nav-link" href="Contact.html">Contact us</a></li>
+        </ul>
+
+      </div>
+    </nav>-->
+   <!-- <video src="images\Pexels Videos 2002527.mp4" class="vid-bg" autoplay loop></video>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <img class="navbar-brand" src="images\RClogo.png" width="350px" height="70px"></img>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="EventPage.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li><a class="nav-link" href="StudentPortal.html">Student Portal</a></li>
+          <li><a class="nav-link" href="Contact.html">Contact us</a></li>
+        </ul>
+
+      </div>
+    </nav>
+    <div class="banner-text">
+      <h2>Welcome to RC University</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur harum voluptas quod debitis facere magni deleniti, ipsam quaerat quos voluptatum obcaecati dolorum repellendus nulla nemo nesciunt ipsa eligendi eveniet. Neque!</p>
+      <button class="tn btn-lg btn-outline-success">visit us</button> 
+    </div>
+  </header>
+--> 
+
+<section id=main>
+  <div class="container">
+    <video autoplay muted loop class="video">
+      <source src="images/Pexels Videos 2002527.mp4"/>
+    </video>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <img class="navbar-brand" src="images\RClogo.png" width="350px" height="70px"></img>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="EventPage.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li><a class="nav-link" href="#">Student Portal</a></li>
+        <li><a class="nav-link" href="Contact.html">Contact us</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <div class="page-content">
+    <h2>Welcome to RC University</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur harum voluptas quod debitis facere magni deleniti, ipsam quaerat quos voluptatum obcaecati dolorum repellendus nulla nemo nesciunt ipsa eligendi eveniet. Neque!</p>
+    <button class="tn btn-lg btn-outline-success">visit us</button> 
+  </div>
+</section>
+
+
+
+
+<div class="col-md-4 p-5 m-2 boxStyle  border border-primary">
+  <h2>Feedback Form</h2>
+  <form >
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</div>
+
+
+
+  <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/1.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/2.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/3.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="footer-content">
+        <div class="container">
+
+          <div class="footer-cols">
+            <div class="row">
+              <div class="col-sm-5">
+                <ul>
+                  <li><img src="images\RClogo.png" width="350px" height="70px"></img></li>
+                  <li>
+                    <h3>About the collage</h3>
+                  </li>
+                  <li><a>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum sunt accusantium quae libero
+                      assumenda incidunt dolorum! Sit deleniti aperiam enim vel repellendus. Enim esse tempore assumenda
+                      quo dignissimos. Voluptatum, voluptatem.</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4">
+                <ul>
+                  <li>Contact</li>
+                  <li style="font-size:20px"><i class="fa fa-phone"></i> +91 1234567890</li>
+                  <li style="font-size:20px"><i class=" fa fa-map-marker"></i> Lorem ipsum dolor sit amet </li>
+                  <li style="font-size:20px"><i class=" fa fa-envelope" aria-hidden="true"></i> abc@gmail.com</li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <ul>
+                  <li></li>
+                  <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"
+                        style="font-size: 50px;"></i></a></li>
+                  <li><a href="https://twitter.com/"> <i class="fa fa-twitter" aria-hidden="true"
+                        style="font-size: 50px;"></i></a></li>
+                  <li><a href="https://github.com/"><i class="fa fa-github" aria-hidden="true"
+                        style="font-size: 50px;"></i> </a></li>
+                  <li> <a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"
+                        style="font-size: 50px;"></i></a> </li>
+                </ul>
               </div>
             </div>
           </div>
-    </header>
-    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/1.jpeg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="images/2.jpeg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="images/3.jpeg" class="d-block w-100" alt="...">
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+      <div class="footer-bottom">&copy;made for learning purpose @Ruchika</div>
     </div>
-    <footer>
-        <div class="footer">
-            <div class="footer-content">
-              <div class="container">
-                
-                <div class="footer-cols">
-                  <div class="row">
-                    <div class="col-sm-5">
-                    <ul><li><img src="images\RClogo.png" width="350px" height="70px"></img></li>
-                        <li><h3>About the collage</h3></li>
-                        <li><a>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum sunt accusantium quae libero assumenda incidunt dolorum! Sit deleniti aperiam enim vel repellendus. Enim esse tempore assumenda quo dignissimos. Voluptatum, voluptatem.</a></li>
-                      </ul></div>
-                      <div class="col-sm-4">  
-                    <ul><li>Contact</li>
-                      <li style="font-size:20px"><i class="fa fa-phone"></i>  +91 1234567890</li>
-                      <li style="font-size:20px"><i class=" fa fa-map-marker"></i>  Lorem ipsum dolor sit amet </li>
-                      <li style="font-size:20px"><i class=" fa fa-envelope" aria-hidden="true"></i> abc@gmail.com</li>
-                    </ul> </div>
-                    <div class="col-sm-3">
-                    <ul><li></li>
-                      <li ><a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 50px;"></i></a></li>
-                      <li ><a href="https://twitter.com/"> <i class="fa fa-twitter" aria-hidden="true" style="font-size: 50px;"></i></a></li>
-                      <li ><a href="https://github.com/" ><i class="fa fa-github" aria-hidden="true" style="font-size: 50px;"></i> </a></li>
-                      <li > <a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true" style="font-size: 50px;"></i></a> </li>
-                    </ul> </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="footer-bottom">&copy;made for learning purpose</div>
-        </div>
-    </footer>
-    
+  </footer>
+
 </body>
-</html> 
+
+</html>

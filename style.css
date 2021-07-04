@@ -1,7 +1,65 @@
-/*footer*/
-header{
-    background-image: url('images\banner.jpg'); 
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
 }
+#main{
+    position: relative;
+    height: 100vh;
+    color:#fff;
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container:after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+.video{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.navbar{
+    background-color: rgb(147, 175, 226);
+    padding:0 2px;
+    color: cornsilk;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    }
+.page-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100%;
+    text-align: center;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.navbar ul:hover{
+    color: ivory;
+}
+.navbar ul li a{
+    transition: transform 0.5s;
+}
+
+/*footer*/
 .carousel-inner img {
     height: 400px;
 }
@@ -22,11 +80,7 @@ header{
     left: 0px;
     padding-top: 20px;
 }
-.navbar{
-    background-color: rgb(147, 175, 226);
-    padding:0 2px;
-    color: cornsilk;
-}
+
 footer{
     background-color:#3e6666 ;
 }
